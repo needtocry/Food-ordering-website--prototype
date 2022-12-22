@@ -1,0 +1,287 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+:root {
+    --navbar-height: 30px;
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.logo {
+    margin: 5px 34px;
+}
+
+.logo img {
+    height: 60px;
+    margin: 5px 5px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    color: rgb(213, 204, 204);
+}
+
+.user-login {
+    position: absolute;
+    right: 10px;
+}
+
+/* section */
+
+#home {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 300px;
+    /* justify-content: center; */
+    align-items: center;
+    height: 347px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("../img/bg.png") no-repeat center center/cover;
+    height: 447px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    opacity: 2;
+}
+
+#home .mainheading {
+    font-family: 'Kanit', sans-serif;
+    font-size: 7rem;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 0px 15px;
+    margin: 5px;
+}
+
+#home h2 {
+    text-align: center;
+    padding: 12px;
+    margin: 12px;
+    font-size: 1.7rem;
+}
+
+/* services section */
+
+#services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services {
+    display: flex;
+    margin: 34px;
+}
+
+#services .box {
+    border: 1px solid rgb(232, 232, 232);
+    margin: 5px 15px;
+    border-radius: 15px;
+    transition: all 0.4s ease 0s;
+}
+
+#services .box:hover {
+    transform: scale(1.05);
+}
+
+#services .box img {
+    height: 197px;
+    width: 320px;
+    display: block;
+    margin: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* perks */
+
+#perk-container {
+    background: rgb(48 45 44);
+    padding: 0 20px;
+}
+
+#perk-container .partners {
+    display: flex;
+    justify-content: center;
+    padding: 0px 80px;
+    margin: 0 auto;
+}
+
+#perk-container .partners .card {
+    margin: 0px 40px;
+}
+
+#perk-container .partners .card img {
+    display: block;
+    margin: auto;
+    height: 260px;
+    padding: 0 0 25px 0;
+}
+
+#perk-container .partners .card h2 {
+    color: white;
+    padding: 0 63px;
+}
+
+#perk-container .partners .card .item {
+    color: white;
+    padding: 0 0 41px 0;
+}
+
+/* client-section */
+
+#client-container{
+    display: flex;
+    height: 290px;
+}
+.clients{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 4px;
+}
+.client-item img{
+    height: 140px;
+}
+.client-item h1{
+    font-size: 63px;
+    color: black;
+    border-right: 5px solid black;
+    padding: 56px 34px;
+}
+
+/* contact-us section */
+
+#contact-container{
+    position: relative;
+}
+#contact-container::before{
+    content: "";
+    position: absolute;
+    background: url('../img/contactus.jpg') no-repeat center center/cover;
+    height: 530px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+.contact input,
+.contact textarea{
+    width: 100%;
+    padding:0.5rem;
+    border: 1px;
+}
+
+.contact label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contact form{
+    width: 25%;
+}
+.contact button{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/* footer section */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* utlities */
+
+.btn {
+    padding: 7px;
+    font-family: 'Oswald', sans-serif;
+    border: 1px;
+    background-color: #ec1c19;
+    /* border-radius: 10px; */
+    font-size: 20px;
+    width: 100px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    transform: scale(1.04);
+}
+
+.center {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.h-primary{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.h-secondary {
+    font-size: 1.2rem;
+}

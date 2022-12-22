@@ -1,0 +1,84 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar .user-login{
+    position:relative;
+}
+#navbar .logo{
+    margin: 0px 34px;
+}
+#navbar ul li a{
+    padding: 0 7px;
+}
+
+/* home */
+
+#home{
+height: 290px;
+padding: 0px 34px;
+}
+#home::before{
+    height: 400px;
+}
+#home h2{
+    font-size: 1.3rem;
+    padding: 5px;
+}
+#home .mainheading{
+    font-size: 2.5rem;
+}
+
+/* services */
+
+#services{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* perks */
+
+#perk-container .partners{
+    flex-direction: column;
+    padding: 0px;
+}
+
+/* clients */
+
+#client-container{
+    height: fit-content;
+}
+.clients{
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 510px){
+    .client-item h1{
+        border-right: 0;
+        border-bottom: 5px solid black;
+    }
+
+}
+
+/* contacts */
+
+@media  only screen and (max-width:600px){
+    .contact form{
+        width: 60%;
+    }
+}
+@media  only screen and (min-width:600px) and (max-width :1150px){
+    .contact form{
+        width: 40%;
+    }
+}
+
+/* utilities */
+
+.btn{
+    font-size: 15px;
+    width: 80px;
+}
+
+
